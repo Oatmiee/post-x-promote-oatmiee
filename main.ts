@@ -24,7 +24,14 @@ if (typeof address !== "string" || !address.startsWith("https://x.com/")) {
   throw new Error('POST.json must look like {"url": "https://x.com/<handle>/status/<id>"}');
 }
 
+const parts: string[] = address.replace("https://x.com/", "").split("/");
+const handle: string | undefined = parts[0];
+const statusId: string | undefined = parts[2];
+if (handle === undefined || handle.length === 0 || parts[1] !== "status" || statusId === undefined || !/^[0-9]+$/.test(statusId)) {
+  throw new Error('POST.json url must name one post: "https://x.com/<handle>/status/<digits>"');
+}
+
 mkdirSync(outDir, { recursive: true });
 copyFileSync(postFile, join(outDir, "POST.json"));
-console.log(`post: ${address}`);
+console.log(`post: @${handle} status ${statusId}`);
 console.log(`copied POST.json to ${join(outDir, "POST.json")}`);
