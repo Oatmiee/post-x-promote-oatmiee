@@ -1,5 +1,10 @@
 # Post X promo — make.fun
 
+[![make.fun](https://img.shields.io/badge/make.fun-bounty-7C3AED)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
+[![Bounty](https://img.shields.io/badge/bounty-post--x--promote--make--your--own--bounty--01-blue)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
+
+Bounty: [post-x-promote-make-your-own-bounty-01](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01) on [make.fun](https://make.fun).
+
 Entry for post-x-promote-make-your-own-bounty-01 ($250, 50 places).
 The entry is one X post by @casiodiamond quoting make.fun's
 make-your-own-bounty post, with a photo of its own attached.
